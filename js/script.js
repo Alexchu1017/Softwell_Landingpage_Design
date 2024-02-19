@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     const slider = document.querySelector('.slider');
     const prevBtn = document.querySelector('.prev-btn');
