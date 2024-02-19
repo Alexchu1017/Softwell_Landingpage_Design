@@ -1,18 +1,22 @@
+
 document.addEventListener("DOMContentLoaded", function() {
     const slider = document.querySelector('.slider');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
     let slideIndex = 0;
     let clientAnimationPlayed = false; // Flag to track if client animation has been played
+    let autoSlideInterval; // Variable to hold the interval for auto sliding
 
     nextBtn.addEventListener('click', function() {
         slideIndex = (slideIndex + 1) % slider.children.length;
         slide();
+        restartAutoSlide();
     });
 
     prevBtn.addEventListener('click', function() {
         slideIndex = (slideIndex - 1 + slider.children.length) % slider.children.length;
         slide();
+        restartAutoSlide();
     });
 
     function slide() {
@@ -21,10 +25,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to automatically slide to next item every 3 seconds
     function autoSlide() {
-        setInterval(function() {
+        autoSlideInterval = setInterval(function() {
             slideIndex = (slideIndex + 1) % slider.children.length;
             slide();
         }, 3000);
+    }
+
+    // Function to restart auto sliding
+    function restartAutoSlide() {
+        clearInterval(autoSlideInterval);
+        autoSlide();
     }
 
     autoSlide(); // Start auto sliding
