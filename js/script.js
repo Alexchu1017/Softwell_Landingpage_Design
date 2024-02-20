@@ -2,6 +2,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const slider = document.querySelector('.slider');
     const prevBtn = document.querySelector('.prev-btn');
     const nextBtn = document.querySelector('.next-btn');
+    const menuIcon = document.getElementById('menu-icon');
+    const navbar = document.querySelector('.navbar');
+
     let slideIndex = 0;
     let clientAnimationPlayed = false; // Flag to track if client animation has been played
     let autoSlideInterval; // Variable to hold the interval for auto sliding
@@ -16,6 +19,11 @@ document.addEventListener("DOMContentLoaded", function() {
         slideIndex = (slideIndex - 1 + slider.children.length) % slider.children.length;
         slide();
         restartAutoSlide();
+    });
+
+    // Toggle navbar visibility when menu icon is clicked
+    menuIcon.addEventListener('click', function() {
+        navbar.classList.toggle('hide');
     });
 
     function slide() {
