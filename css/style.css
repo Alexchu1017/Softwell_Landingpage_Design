@@ -715,7 +715,7 @@ body {
   }
 
 /* For devices with a maximum width of 768px (typical for phones) */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 768px) {
 
     #menu-icon {
         display: block;
