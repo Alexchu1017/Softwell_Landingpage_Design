@@ -253,7 +253,7 @@ body {
 #arrow{
     position: absolute;
     Left: 49%;
-    top: 253rem;
+    top: 257rem;
     animation: floatUpDown 1.5s ease-in-out infinite; 
 }
 
@@ -715,7 +715,7 @@ body {
   }
 
 /* For devices with a maximum width of 768px (typical for phones) */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
 
     #menu-icon {
         display: block;
@@ -861,39 +861,40 @@ body {
 }
 
 .step1{
-    margin-top: -180%;
+    margin-top: -280%;
     margin-left: 60px;
-    margin-right: 160px;
+    margin-right: 30px;
 }
 
 .step2{
-    margin-top: 20%;
-    margin-left: -55%;
+    margin-top: 25%;
+    margin-left: -80%;
     margin-right: 105%;
     text-align: right;
 }
 
 .step3{
-    margin-top: 10%;
+    margin-top: 35%;
     margin-left: 60px;
-    margin-right: 160px;
+    margin-right: 30px;
 }
 
 .step4{
-    margin-top: 30%;
-    margin-left: -54%;
+    margin-top: 60%;
+    margin-left: -80%;
     margin-right: 105%;
     text-align: right;
 }
 
 .step5{
-    margin-top: 16%;
-    margin-left: 100px;
+    margin-top: 65%;
+    margin-left: 60px;
+    margin-right: 30px;
 }
 
 .step6{
-    margin-top: 10%;
-    margin-left: -56%;
+    margin-top: 30%;
+    margin-left: -80%;
     margin-right: 105%;
     text-align: right;
 }
@@ -913,14 +914,14 @@ body {
 }
 
 .step3 img{
-    margin-top: 70%;
+    margin-top: 75%;
     width: 80%;
     right: 3%;
     position: absolute;
 }
 
 .step4 img{
-    margin-top: 80%;
+    margin-top: 60%;
     width: 100%;
     right: 8%;
     position: absolute;
